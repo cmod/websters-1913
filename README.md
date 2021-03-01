@@ -2,17 +2,17 @@
 
 A contemporary-update to the CSS styling of dictionary results for the Webster's 1913 English Dictionary.
 
-This is by no means a "perfect" styling but it feels much more aligned with the rest of the dictionary than previous stylings. It's just CSS — please fork this sucker and make it even prettier using more mystical CSS selectors.
+This is by no means a "perfect" styling but it feels much more aligned with the rest of the dictionary than previous stylings. It's just CSS — please fork this sucker and make it even prettier using mystical CSS selectors.
 
 ## Installation
 
 To install on macOS: 
 
 - Download and unzip the [`websters-1913.dictionary.zip`](https://github.com/cmod/websters-1913/raw/main/websters-1913.dictionary.zip) file
-- Open Dictionary.app
+- Open `Dictionary.app`
 - File > Open Dictionaries Folder
-- Copy the unzipped webster-1913.dictionary file into the dictionaries folder (default location: `~/Library/Dictionaries`)
-- Quit and re-open Dictionary.app
+- Copy the unzipped `webster-1913.dictionary` file into the dictionaries folder (default location: `~/Library/Dictionaries`)
+- Quit and re-open `Dictionary.app`
 - Dictionary > Preferences
 - Webster's 1913 should be at the bottom of your sources list
 - Select it!
