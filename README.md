@@ -1,6 +1,10 @@
 # Webster's 1913 Dictionary for macOS
 
-A contemporary-update to the styling of dictionary results for the Webster's 1913 English Dictionary.
+A contemporary-update to the CSS styling of dictionary results for the Webster's 1913 English Dictionary.
+
+This is by no means a "perfect" styling but it feels much more aligned with the rest of the dictionary than previous stylings. It's just CSS — please fork this sucker and make it even prettier using more mystical CSS selectors.
+
+----
 
 Dictionary madness kicked off by [James Somers back in 2014](https://jsomers.net/blog/dictionary):
 
