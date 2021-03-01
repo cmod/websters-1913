@@ -20,3 +20,5 @@ To install on macOS:
 - Dictionary > Preferences
 - Webster's 1913 should be at the bottom of your sources list
 - Select it!
+
+![screenshot of results for "Monkey"](https://github.com/cmod/websters-1913/raw/main/img/example.jpg)
