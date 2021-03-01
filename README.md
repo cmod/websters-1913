@@ -1,10 +1,14 @@
-# Webster's 1913 Dictionary 
+# Webster's 1913 Dictionary for macOS
 
 A contemporary-update to the styling of dictionary results for the Webster's 1913 English Dictionary.
 
-Dictionary madness kicked off by [James Somers back in 2014](https://jsomers.net/blog/dictionary).
+Dictionary madness kicked off by [James Somers back in 2014](https://jsomers.net/blog/dictionary):
+
+> A book where you can enter “sport” and end up with “a diversion of the field” — this is in fact the opposite of what I’d known a dictionary to be. This is a book that transmutes plain words into language that’s finer and more vivid and sometimes more rare. No wonder McPhee wrote with it by his side. No wonder he looked up words he knew, versus words he didn’t, in a ratio of “at least ninety-nine to one.”
 
 Based off the output of [@ponychicken's parsing](https://github.com/ponychicken/WebsterParser) of the original dictionary files. 
+
+### Installation
 
 To install on macOS: 
 
