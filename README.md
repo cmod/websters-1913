@@ -11,7 +11,7 @@ To install on macOS:
 - Download and unzip the [`websters-1913.dictionary.zip`](https://github.com/cmod/websters-1913/raw/main/websters-1913.dictionary.zip) file (by double clicking it)
 - Open `Dictionary.app`
 - File > Open Dictionaries Folder
-- Copy the unzipped `webster-1913.dictionary` file into the dictionaries folder (default location: `~/Library/Dictionaries`)
+- Copy the unzipped `websters-1913.dictionary` file into the dictionaries folder (default location: `~/Library/Dictionaries`)
 - Quit and re-open `Dictionary.app`
 - Dictionary > Preferences
 - Webster's 1913 should be at the bottom of your sources list

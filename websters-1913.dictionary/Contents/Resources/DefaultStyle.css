@@ -2,15 +2,17 @@
 @namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
 
 body {
-  line-height: 1.5em;
+  line-height: 1.5;
+  /* cap the measure so lines stay readable in wide windows */
+  max-width: 42em;
   padding-top: 2em;
   padding-bottom: 3em;
   padding-left: 1em;
 }
 
 body, .block {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 13px;
+  font-family: ui-serif, "New York", Georgia, serif;
+  font-size: 14px;
 }
 
 div {
@@ -52,7 +54,7 @@ div {
 }
 
 .qau:before, .au:before {
-  content: " – ";
+  content: " — ";
 }
 
 *+.hw:before {
@@ -87,8 +89,14 @@ div {
 .recipr, .sig, .wns, .w16ns, .abbr, .altname, .altnpluf, .ets,
 .etsep, .ex, .pos, .qau, .qex, .sd, .ship, .source, .pluf,
 .uex, .isa, .mathex, .ratio, .singf, .xlati, .tran, .tr,
-.iref, .figref, .ptcl, .mark, .fld  {
+.iref, .figref, .ptcl, .mark, .fld, .spn  {
   font-style: italic;
+}
+
+/* etymology + pronunciation are reference apparatus; let definitions come forward.
+   opacity (not color) so it dims correctly in both light and dark mode */
+.ety, .pr {
+  opacity: 0.65;
 }
 
 .q {
@@ -102,16 +110,12 @@ div {
   font-weight:bold;
 }
 
-.adjf, .conj, .decf, .er, .plw, .singw, .u, .plw {
-  
-}
-
 @supports(font-feature-settings: 'smcp') {
-    .adjf, .conj, .decf, .er, .plw, .singw, .u, .plw {
-        font-family: inherit
+    .adjf, .conj, .decf, .er, .plw, .singw, .u {
+        font-family: inherit;
         font-variant: normal;
         font-feature-settings: 'smcp';
-        letter-spacing: 1px;
+        letter-spacing: 0.03em;
     }
 }
 
@@ -120,9 +124,20 @@ html {
   background: none !important;
 }
 
+/* Dictionary.app's legacy dark-mode query */
 @media (prefers-dark-interface) {
   .hw {
     /* blue is more readable on the dark background than maroon */
+    color: -webkit-link;
+  }
+  img {
+    filter: invert(100%);
+  }
+}
+
+/* Standard dark-mode query, for newer macOS versions */
+@media (prefers-color-scheme: dark) {
+  .hw {
     color: -webkit-link;
   }
   img {
